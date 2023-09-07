@@ -168,3 +168,65 @@ button {
   font-weight: 400;
 }
 
+/* menu-treadmill */
+
+h2 {
+  font-size: 48px;
+  margin: 5rem 0 2rem 0;
+  font-weight: 400;
+}
+
+.box-btn {
+  display: flex;
+  gap: 3rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./assets/bg-menu.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-treadmill {
+display: flex;
+align-items: center;
+text-align: left;
+justify-content: space-around;
+width: 80rem;
+height: 35rem;
+}
+
+
+
+.box-img {
+  width: 16.5rem;
+  height: 26.5rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: #fff;
+}
+
+
+.menu-treadmill img {
+  width: 16.45rem;
+  height: 17rem;
+  align-items: center;
+}
+
+.menu-treadmill h2 {
+  font-size: 1.25rem;
+  font-weight: 700; 
+  line-height: 150%; /* 1.875rem */
+  margin: 1.2rem;
+}
+
+.menu-treadmill p {
+  font-size: .97rem;
+  font-weight: 300; 
+  line-height: 150%; /* 1.875rem */
+  margin: 1.2rem;
+}
