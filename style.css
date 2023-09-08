@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Marcellus', sans-serif;
+  font-family: "Marcellus", sans-serif;
 }
 
 :root {
@@ -15,7 +15,6 @@
   --color-neutral2: #92929230;
 }
 
-
 /* Nav-bar */
 
 .contain-nav-bar {
@@ -24,7 +23,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  transition: all .3s solid;
+  transition: all 0.3s solid;
 }
 
 .contain-nav-bar:hover {
@@ -59,30 +58,28 @@ nav a {
   position: relative;
   transition: all 0.3s;
 
-
-&:after{
-  content:'';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background-color: var(--color-yellow);
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition: transform 0.3s ease;
-}
-
-&:hover {
-  &::after{
-    transform: scaleX(1);
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-yellow);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease;
   }
-}
+
+  &:hover {
+    &::after {
+      transform: scaleX(1);
+    }
+  }
 }
 .contato {
   color: var(--color-yellow);
 }
-
 
 /* home */
 
@@ -97,12 +94,11 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
- }
+}
 
- .contain-text {
+.contain-text {
   padding: 1rem 0 0 13.5rem;
- }
-
+}
 
 section h1 {
   color: var(--color-white);
@@ -126,15 +122,15 @@ button {
   padding: 0.6rem 0.6rem 0.6rem 1rem;
   align-items: center;
   gap: 0.32rem;
-  padding: .7rem 1rem;
-  font-size: .9rem;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
   border: none;
   border-radius: 1.5rem;
   background: var(--color-yellow);
   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-  /* About Us */
+/* About Us */
 
 .about {
   width: 100%;
@@ -150,7 +146,7 @@ button {
 }
 
 .img-about {
-  width:  45rem;
+  width: 45rem;
   height: 43rem;
 }
 
@@ -161,7 +157,7 @@ button {
 
 .about p {
   width: 130%;
-  color: #130A25;
+  color: #130a25;
   text-align: justify;
   font-family: Marcellus;
   font-size: 1.2rem;
@@ -188,28 +184,28 @@ h2 {
   background-image: url(./assets/bg-menu.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
 .menu-treadmill {
-display: flex;
-align-items: center;
-text-align: left;
-justify-content: space-around;
-width: 80rem;
-height: 35rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: space-around;
+  width: 80rem;
+  height: 35rem;
 }
-
-
 
 .box-img {
   width: 16.5rem;
   height: 26.5rem;
   align-items: center;
   justify-content: center;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   background-color: #fff;
 }
-
 
 .menu-treadmill img {
   width: 16.45rem;
@@ -219,14 +215,70 @@ height: 35rem;
 
 .menu-treadmill h2 {
   font-size: 1.25rem;
-  font-weight: 700; 
+  font-weight: 700;
   line-height: 150%; /* 1.875rem */
   margin: 1.2rem;
 }
 
 .menu-treadmill p {
-  font-size: .97rem;
-  font-weight: 300; 
+  font-size: 0.97rem;
+  font-weight: 300;
   line-height: 150%; /* 1.875rem */
   margin: 1.2rem;
+}
+
+
+/* Page testimonials */
+
+.testimonials {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/bg-testimonials.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contain-testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 5rem;
+  width: 100vw;
+  height: 100%;
+  padding-top: 5rem;
+}
+
+.testimonials-1 {
+  background: #FFF;
+  width: 20.1875rem;
+  height: 28rem;
+  padding-top: 1rem;
+
+}
+
+.img-testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem 7rem;
+} 
+
+.contain-testimonials .testimonials-1 .img-testimonials img {
+  border-radius: 100%;
+}
+
+.testimonials-1 p {
+  text-align: justify;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 2.6rem ;
+}
+
+.text-botom-card-testimonials h3 {
+  margin-top: 1.6rem;
+  text-align: center;
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
